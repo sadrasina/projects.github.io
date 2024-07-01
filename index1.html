@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>rezome</title>
+        <style>
+                h1{
+      font-size: 70px;
+    }
+    li {
+      font-size: 60px;
+    }
+    .small-list {
+        font-size: 30px;
+    }
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./style1.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="centered">
+            <h1 style="color: white;">صدرا پالیزدار</h1>
+        </div>
+        <div id="centered">
+            <h2 style="color: white;">برای دیدن رزومه هر بخش روی آن کلیک کنید</h2>
+        </div>
+        <ul>
+            <li style="color: white;" onclick="toggleSubItems(this)">مقام های علمی</li>
+            <ul class="sub-items">
+                    <li style="color: white;" class="small-list">مقام دوم در مسابقات ریاضی چهل چراغ</li>
+                    <li style="color: white;" class="small-list">مقام سوم در مسابقات ریاضی دوئل</li>
+                    <li style="color: white;" class="small-list">قبول شدن در مرحله یک مسابقات فیزیک نیترو پلاس</li>
+                    <li style="color: white;" class="small-list">در دو سال متوالی IMC قبول شدن </li>
+                    <li style="color: white;" class="small-list">قبول شدن در مرحله یک مسابقات کامپیوتر نیترو پلاس</li>
+                    <li style="color: white;" class="small-list">قبول شدن در مرحله یک المپیاد ریاضی</li>
+                    <li style="color: white;" class="small-list">قبول شدن در مرحله یک المپیاد کامپیوتر در دو سال متوالی</li>
+            </ul>
+            <hr>
+            <li style="color: white;" onclick="toggleSubItems(this)">مقام ها و مهارت های کامپیوتر</li>
+            <ul class="sub-items">
+                <li style="color: white;" class="small-list">مقام اول در مسابقات سی پلاس پلاس سلام کاپ</li>
+                <li style="color: white;" class="small-list">مسلط به زبان های برنامه نویسی سی پلاس پلاس-پایتون-جاوا</li>
+                <li style="color: white;" class="small-list">مهارت های وب مانند اچ تی ام ال- سی اس اس-پی اچ پی-جاوا اسکریپت و اس کیو ال</li>
+            </ul>
+        <hr>
+            <li style="color: white;" onclick="toggleSubItems(this)">مقام ها و مهارت های ورزشی</li>
+            <ul class="sub-items">
+                <li style="color: white;" class="small-list">مقام اول بسکتبال در باشگاه شهید سلیمانی منطقه یک</li>
+                <li style="color: white;" class="small-list">سرتیفیکیت کمربند زرد کیک بوکسینگ</li>
+                <li style="color: white;" class="small-list">مقام اول منطقه 11 بدمینتون</li>
+                <li style="color: white;" class="small-list">حضور در تیم منطقه 11 بدمینتون در مسابقات استان تهران</li>
+                <li style="color: white;" class="small-list">مقام اول جام حذفی بدمینتون حلی لیگ</li>
+                <li style="color: white;" class="small-list">مقام دوم بدمینتون حلی لیگ</li>
+            </ul>
+        </ul>
+        <hr>
+        <video class="background-video" autoplay loop muted>
+            <source src="back.mp4" type="video/mp4">
+        </video>
+        <style>
+            .background-video {
+               position: fixed;
+               right: 0;
+               bottom: 0;
+               min-width: 100%;
+               min-height: 100%;
+               z-index: -1;
+            }
+         </style>
+        <script src="./rezome.js"></script>
+    </body>
+</html>
